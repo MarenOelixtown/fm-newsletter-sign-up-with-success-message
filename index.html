@@ -29,7 +29,7 @@
   <body>
     <main>
       <h1>Newsletter sign-up form with success message</h1>
-      <form action="">
+      <form aria-label="Newsletter sign-up">
         <picture
           ><source
             srcset="./assets/images/illustration-sign-up-desktop.svg"
@@ -49,15 +49,22 @@
             type="email"
             name="email"
             id="email"
+            autocomplete="email"
             placeholder="email@company.com"
             required
           />
         </p>
-        <dialog>
-          <h2>Thanks for subscribing!</h2>
+        <dialog
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="Subscribing successfull"
+        >
+          <img src="./assets/images/icon-success.svg" alt="" />
+          <h2 id="Subscribing successfull">Thanks for subscribing!</h2>
           <p>
-            A confirmation email has been sent to ash@loremcompany.com. Please
-            open it and click the button inside to confirm your subscription.
+            A confirmation email has been sent to
+            <span>ash@loremcompany.com</span>. Please open it and click the
+            button inside to confirm your subscription.
           </p>
           <button>Dismiss message</button>
         </dialog>
