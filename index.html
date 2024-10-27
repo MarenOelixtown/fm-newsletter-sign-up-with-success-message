@@ -42,42 +42,58 @@
             src="./assets/images/illustration-sign-up-mobile.svg"
             alt=""
         /></picture>
-        <h2>Stay updated!</h2>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
-        </ul>
-        <p>
-          <label for="email">Email address</label>
-          <span role="alert" data-js="emailAlert"
-            ><span data-js="emailError">Valid email required</span></span
-          >
-          <input
-            type="email"
-            name="email"
-            id="email"
-            autocomplete="email"
-            placeholder="email@company.com"
-            required
-          />
-        </p>
-        <dialog
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="Subscribing successfull"
-        >
-          <img src="./assets/images/icon-success.svg" alt="" />
-          <h2 id="Subscribing successfull">Thanks for subscribing!</h2>
-          <p>
-            A confirmation email has been sent to
-            <span>ash@loremcompany.com</span>. Please open it and click the
-            button inside to confirm your subscription.
+        <section class="signup-form__text">
+          <h2 class="signup-form__title">Stay updated!</h2>
+          <p class="signup-form__description text">
+            Join 60,000+ product managers receiving monthly updates on:
           </p>
-          <button>Dismiss message</button>
-        </dialog>
-        <button type="submit">Subscribe to monthly newsletter</button>
+          <ul class="signup-form__list text">
+            <li class="signup-form__list-item">
+              Product discovery and building what matters
+            </li>
+            <li class="signup-form__list-item">
+              Measuring to ensure updates are a success
+            </li>
+            <li class="signup-form__list-item">And much more!</li>
+          </ul>
+          <p class="signup-form_email">
+            <label class="signup-form_email-label" for="email"
+              >Email address</label
+            >
+            <span
+              class="signup-form_email-label signup-form_email-alert"
+              role="alert"
+              data-js="emailAlert"
+              ><span data-js="emailError">Valid email required</span></span
+            >
+            <input
+              class="signup-form_email-input element-style"
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              placeholder="email@company.com"
+              required
+            />
+          </p>
+          <dialog
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="Subscribing successfull"
+          >
+            <img src="./assets/images/icon-success.svg" alt="" />
+            <h2 id="Subscribing successfull">Thanks for subscribing!</h2>
+            <p>
+              A confirmation email has been sent to
+              <span>ash@loremcompany.com</span>. Please open it and click the
+              button inside to confirm your subscription.
+            </p>
+            <button>Dismiss message</button>
+          </dialog>
+          <button class="subscribe-btn element-style" type="submit">
+            Subscribe to monthly newsletter
+          </button>
+        </section>
       </form>
     </main>
   </body>

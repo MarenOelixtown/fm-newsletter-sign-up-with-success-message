@@ -38,7 +38,65 @@ main {
   align-items: center;
   margin: auto;
 }
+.text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 1.5rem 0;
+}
 .signup-form {
   background-color: var(--white);
   min-height: 100vh;
+}
+.signup-form__img {
+  min-width: 100%;
+}
+.signup-form__text {
+  margin: 2rem 1.6rem;
+}
+.signup-form__title {
+  font-size: 2.8rem;
+  font-weight: var(--font-weight-bold);
+}
+.signup-form__description {
+}
+.signup-form__list {
+  list-style-image: url("/assets/images/icon-list.svg");
+  list-style-position: inside;
+  margin-bottom: 2.5rem;
+}
+.signup-form__list-item {
+  text-indent: -2rem;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+}
+.signup-form_email {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+}
+.signup-form_email-label {
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-bold);
+}
+.signup-form_email-alert {
+  color: var(--primary-color-tomato);
+  justify-self: end;
+}
+.element-style {
+  min-width: 100%;
+  padding: 1.3rem 1.5rem;
+  border-radius: 8px;
+}
+.signup-form_email-input {
+  border: 1px solid var(--grey);
+  font-size: 1rem;
+  margin: 0.5rem 0 1.5rem 0;
+  grid-column: 1 / span 2;
+}
+.subscribe-btn {
+  border: none;
+  color: var(--white);
+  font-weight: var(--font-weight-bold);
+  font-size: 1rem;
+  background-color: var(--dark-slate-grey);
 }
