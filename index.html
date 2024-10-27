@@ -29,13 +29,18 @@
   </head>
   <body>
     <main>
-      <h1>Newsletter sign-up form with success message</h1>
-      <form aria-label="Newsletter sign-up">
+      <h1 class="title--sr-only">
+        Newsletter sign-up form with success message
+      </h1>
+      <form class="signup-form" aria-label="Newsletter sign-up">
         <picture
           ><source
             srcset="./assets/images/illustration-sign-up-desktop.svg"
             media="(min-width: 1200px)" />
-          <img src="./assets/images/illustration-sign-up-mobile.svg" alt=""
+          <img
+            class="signup-form__img"
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt=""
         /></picture>
         <h2>Stay updated!</h2>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>

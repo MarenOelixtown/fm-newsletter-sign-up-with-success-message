@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color-tomato: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+.title--sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+body {
+  font-family: "Roboto", serif;
+  color: var(--dark-slate-grey);
+  font-weight: var(--font-weight-regular);
+  background-color: var(--dark-slate-grey);
+  min-height: 100vh;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.signup-form {
+  background-color: var(--white);
+  min-height: 100vh;
+}
