@@ -47,7 +47,7 @@
             src="./assets/images/illustration-sign-up-mobile.svg"
             alt=""
         /></picture>
-        <section class="signup-form__text">
+        <section class="signup-form__text-area">
           <h2 class="heading">Stay updated!</h2>
           <p class="text signup-form__description">
             Join 60,000+ product managers receiving monthly updates on:
@@ -73,7 +73,7 @@
             >
             <input
               data-js="email-input"
-              class="basic-style signup-form_email-input"
+              class="signup-form__controls--basic signup-form_email-input"
               type="email"
               name="email"
               id="email"
@@ -84,7 +84,7 @@
             />
           </p>
 
-          <button class="basic-style button" type="submit">
+          <button class="signup-form__controls--basic button" type="submit">
             Subscribe to monthly newsletter
           </button>
         </section>
@@ -111,7 +111,11 @@
           <strong><span data-js="dialog-email"></span></strong>. Please open it
           and click the button inside to confirm your subscription.
         </p>
-        <button autofocus class="basic-style button" data-js="dismiss-button">
+        <button
+          autofocus
+          class="signup-form__controls--basic button"
+          data-js="dismiss-button"
+        >
           Dismiss message
         </button>
       </dialog>

@@ -54,7 +54,26 @@ main {
 .signup-form__img {
   min-width: 100%;
 }
-.signup-form__text {
+.signup-form__controls--basic {
+  min-width: 100%;
+  padding: 1.3rem 1.5rem;
+  border-radius: 8px;
+}
+.button {
+  border: none;
+  color: var(--white);
+  font-weight: var(--font-weight-bold);
+  font-size: 1rem;
+  background-color: var(--dark-slate-grey);
+}
+.button:hover {
+  background-color: var(--primary-color-tomato);
+}
+.button:hover:active {
+  box-shadow: 0px 16px 32px 0px rgba(255, 96, 85, 0.5);
+}
+
+.signup-form__text-area {
   margin: 2rem 1.6rem;
 }
 .signup-form__description {
@@ -69,6 +88,7 @@ main {
   padding-left: 2rem;
   padding-bottom: 0.5rem;
 }
+
 .signup-form_email {
   display: grid;
   grid-template-rows: auto auto;
@@ -86,30 +106,18 @@ main {
   display: none;
 }
 
-.basic-style {
-  min-width: 100%;
-  padding: 1.3rem 1.5rem;
-  border-radius: 8px;
-}
 .signup-form_email-input {
   border: 1px solid var(--grey);
   font-size: 1rem;
   margin: 0.5rem 0 1.5rem 0;
   grid-column: 1 / span 2;
 }
-
 .signup-form_email-input--invalid {
   background-color: hsla(4, 100%, 67%, 0.15);
   border: 1px solid var(--primary-color-tomato);
   color: var(--primary-color-tomato);
 }
-.button {
-  border: none;
-  color: var(--white);
-  font-weight: var(--font-weight-bold);
-  font-size: 1rem;
-  background-color: var(--dark-slate-grey);
-}
+
 .dialog {
   border: none;
   padding: 10rem 2rem 0rem 2rem;
