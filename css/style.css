@@ -43,6 +43,10 @@ main {
   line-height: 1.5;
   margin: 1.5rem 0;
 }
+.heading {
+  font-size: 2.8rem;
+  font-weight: var(--font-weight-bold);
+}
 .signup-form {
   background-color: var(--white);
   min-height: 100vh;
@@ -52,10 +56,6 @@ main {
 }
 .signup-form__text {
   margin: 2rem 1.6rem;
-}
-.signup-form__title {
-  font-size: 2.8rem;
-  font-weight: var(--font-weight-bold);
 }
 .signup-form__description {
 }
@@ -82,7 +82,7 @@ main {
   color: var(--primary-color-tomato);
   justify-self: end;
 }
-.element-style {
+.basic-style {
   min-width: 100%;
   padding: 1.3rem 1.5rem;
   border-radius: 8px;
@@ -93,10 +93,21 @@ main {
   margin: 0.5rem 0 1.5rem 0;
   grid-column: 1 / span 2;
 }
-.subscribe-btn {
+.button {
   border: none;
   color: var(--white);
   font-weight: var(--font-weight-bold);
   font-size: 1rem;
   background-color: var(--dark-slate-grey);
 }
+.dialog__success-icon {
+  margin-bottom: 2rem;
+}
+.dialog {
+  border: none;
+  padding: 10rem 2rem 3rem 2rem;
+}
+/* .dialog::backdrop {
+  background: var(--white);
+}
+ */

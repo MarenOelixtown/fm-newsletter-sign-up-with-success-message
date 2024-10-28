@@ -43,7 +43,7 @@
             alt=""
         /></picture>
         <section class="signup-form__text">
-          <h2 class="signup-form__title">Stay updated!</h2>
+          <h2 class="heading">Stay updated!</h2>
           <p class="signup-form__description text">
             Join 60,000+ product managers receiving monthly updates on:
           </p>
@@ -67,7 +67,7 @@
               ><span data-js="emailError">Valid email required</span></span
             >
             <input
-              class="signup-form_email-input element-style"
+              class="signup-form_email-input basic-style"
               type="email"
               name="email"
               id="email"
@@ -77,20 +77,32 @@
             />
           </p>
           <dialog
+            class="dialog"
             role="dialog"
             aria-modal="true"
             aria-labelledby="Subscribing successfull"
           >
-            <img src="./assets/images/icon-success.svg" alt="" />
-            <h2 id="Subscribing successfull">Thanks for subscribing!</h2>
-            <p>
+            <img
+              src="./assets/images/icon-success.svg"
+              alt=""
+              class="dialog__success-icon"
+              width="64"
+              height="64"
+            />
+            <h2 id="Subscribing successfull" class="heading">
+              Thanks for subscribing!
+            </h2>
+            <p class="text">
               A confirmation email has been sent to
-              <span>ash@loremcompany.com</span>. Please open it and click the
-              button inside to confirm your subscription.
+              <strong><span>ash@loremcompany.com</span></strong
+              >. Please open it and click the button inside to confirm your
+              subscription.
             </p>
-            <button>Dismiss message</button>
+            <button autofocus class="basic-style button">
+              Dismiss message
+            </button>
           </dialog>
-          <button class="subscribe-btn element-style" type="submit">
+          <button class="button basic-style" type="submit">
             Subscribe to monthly newsletter
           </button>
         </section>
