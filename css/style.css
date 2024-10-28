@@ -100,14 +100,18 @@ main {
   font-size: 1rem;
   background-color: var(--dark-slate-grey);
 }
+.dialog {
+  border: none;
+  padding: 10rem 2rem 0rem 2rem;
+  max-width: 100%;
+  color: inherit;
+}
+.dialog::backdrop {
+  background: var(--white);
+}
 .dialog__success-icon {
   margin-bottom: 2rem;
 }
-.dialog {
-  border: none;
-  padding: 10rem 2rem 3rem 2rem;
+.dialog-text {
+  margin-bottom: 20rem;
 }
-/* .dialog::backdrop {
-  background: var(--white);
-}
- */
