@@ -82,6 +82,10 @@ main {
   color: var(--primary-color-tomato);
   justify-self: end;
 }
+.hidden {
+  display: none;
+}
+
 .basic-style {
   min-width: 100%;
   padding: 1.3rem 1.5rem;
@@ -92,6 +96,12 @@ main {
   font-size: 1rem;
   margin: 0.5rem 0 1.5rem 0;
   grid-column: 1 / span 2;
+}
+
+.signup-form_email-input--invalid {
+  background-color: hsla(4, 100%, 67%, 0.15);
+  border: 1px solid var(--primary-color-tomato);
+  color: var(--primary-color-tomato);
 }
 .button {
   border: none;

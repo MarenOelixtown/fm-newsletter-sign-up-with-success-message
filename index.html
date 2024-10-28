@@ -66,18 +66,20 @@
               >Email address</label
             >
             <span
-              class="signup-form_email-label signup-form_email-alert"
+              class="signup-form_email-label signup-form_email-alert hidden"
               role="alert"
-              data-js="emailAlert"
-              ><span data-js="emailError">Valid email required</span></span
+              data-js="email-alert"
+              ><span>Valid email required</span></span
             >
             <input
+              data-js="email-input"
               class="basic-style signup-form_email-input"
               type="email"
               name="email"
               id="email"
               autocomplete="email"
               placeholder="email@company.com"
+              pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
               required
             />
           </p>
@@ -106,10 +108,8 @@
         </h2>
         <p class="text dialog-text">
           A confirmation email has been sent to
-          <strong
-            ><span data-js="dialog-email">ash@loremcompany.com</span></strong
-          >. Please open it and click the button inside to confirm your
-          subscription.
+          <strong><span data-js="dialog-email"></span></strong>. Please open it
+          and click the button inside to confirm your subscription.
         </p>
         <button autofocus class="basic-style button" data-js="dismiss-button">
           Dismiss message
