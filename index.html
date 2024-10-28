@@ -33,7 +33,11 @@
       <h1 class="title--sr-only">
         Newsletter sign-up form with success message
       </h1>
-      <form class="signup-form" aria-label="Newsletter sign-up">
+      <form
+        class="signup-form"
+        data-js="signup-form"
+        aria-label="Newsletter sign-up"
+      >
         <picture
           ><source
             srcset="./assets/images/illustration-sign-up-desktop.svg"
@@ -78,11 +82,7 @@
             />
           </p>
 
-          <button
-            class="basic-style button"
-            data-js="subscribe-button"
-            type="submit"
-          >
+          <button class="basic-style button" type="submit">
             Subscribe to monthly newsletter
           </button>
         </section>
@@ -106,7 +106,8 @@
         </h2>
         <p class="text dialog-text">
           A confirmation email has been sent to
-          <strong><span>ash@loremcompany.com</span></strong
+          <strong
+            ><span data-js="dialog-email">ash@loremcompany.com</span></strong
           >. Please open it and click the button inside to confirm your
           subscription.
         </p>
