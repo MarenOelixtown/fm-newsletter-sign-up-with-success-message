@@ -16,11 +16,10 @@ emailInput.addEventListener("input", function () {
 });
 
 signupForm.addEventListener("submit", (event) => {
-  console.log("clicked");
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
-  console.log(data);
+
   dialogEmail.textContent = data.email;
   successDialog.showModal();
   event.target.reset();
