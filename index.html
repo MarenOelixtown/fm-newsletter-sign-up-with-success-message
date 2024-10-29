@@ -25,54 +25,102 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <main>
-      <h1>Newsletter sign-up form with success message</h1>
-      <form aria-label="Newsletter sign-up">
+      <h1 class="title--sr-only">
+        Newsletter sign-up form with success message
+      </h1>
+      <form
+        class="signup-form"
+        data-js="signup-form"
+        aria-label="Newsletter sign-up"
+      >
         <picture
           ><source
             srcset="./assets/images/illustration-sign-up-desktop.svg"
-            media="(min-width: 1200px)" />
-          <img src="./assets/images/illustration-sign-up-mobile.svg" alt=""
+            media="(min-width: 930px)" />
+          <img
+            class="signup-form__img"
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt=""
+            width="400"
+            height="593"
         /></picture>
-        <h2>Stay updated!</h2>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
-        </ul>
-        <p>
-          <label for="email">Email address</label>
-          <span role="alert" data-js="emailAlert"
-            ><span data-js="emailError">Valid email required</span></span
-          >
-          <input
-            type="email"
-            name="email"
-            id="email"
-            autocomplete="email"
-            placeholder="email@company.com"
-            required
-          />
-        </p>
-        <dialog
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="Subscribing successfull"
-        >
-          <img src="./assets/images/icon-success.svg" alt="" />
-          <h2 id="Subscribing successfull">Thanks for subscribing!</h2>
-          <p>
-            A confirmation email has been sent to
-            <span>ash@loremcompany.com</span>. Please open it and click the
-            button inside to confirm your subscription.
+        <section class="signup-form__text-area">
+          <h2 class="heading">Stay updated!</h2>
+          <p class="text">
+            Join 60,000+ product managers receiving monthly updates on:
           </p>
-          <button>Dismiss message</button>
-        </dialog>
-        <button type="submit">Subscribe to monthly newsletter</button>
+          <ul class="signup-form__list text">
+            <li class="signup-form__list-item">
+              Product discovery and building what matters
+            </li>
+            <li class="signup-form__list-item">
+              Measuring to ensure updates are a success
+            </li>
+            <li class="signup-form__list-item">And much more!</li>
+          </ul>
+          <p class="signup-form_email">
+            <label class="signup-form_email-label" for="email"
+              >Email address</label
+            >
+            <span
+              class="signup-form_email-label signup-form_email-alert hidden"
+              role="alert"
+              data-js="email-alert"
+              ><span>Valid email required</span></span
+            >
+            <input
+              data-js="email-input"
+              class="signup-form__controls--basic signup-form_email-input"
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              placeholder="email@company.com"
+              pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+              required
+            />
+          </p>
+
+          <button class="signup-form__controls--basic button" type="submit">
+            Subscribe to monthly newsletter
+          </button>
+        </section>
       </form>
+      <dialog
+        class="dialog"
+        data-js="success-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="Subscribing successfull"
+      >
+        <img
+          src="./assets/images/icon-success.svg"
+          alt=""
+          class="dialog__success-icon"
+          width="64"
+          height="64"
+        />
+        <h2 id="Subscribing successfull" class="heading">
+          Thanks for subscribing!
+        </h2>
+        <p class="text dialog-text">
+          A confirmation email has been sent to
+          <strong><span data-js="dialog-email"></span></strong>. Please open it
+          and click the button inside to confirm your subscription.
+        </p>
+        <button
+          autofocus
+          class="signup-form__controls--basic button"
+          data-js="dismiss-button"
+        >
+          Dismiss message
+        </button>
+      </dialog>
     </main>
   </body>
 </html>
